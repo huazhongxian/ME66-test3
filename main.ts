@@ -779,6 +779,34 @@ namespace newland {
   }
 
 
+
+  /**
+   * @param path kmodel to load; eg: model.kmodel
+   */
+  /*//% blockId=newland_loadkmodel block="Load KNN model %path"
+  //% group="Classifier" weight=90
+  //% advanced=true
+  export function newland_loadkmodel(path: string) {
+    let str = `K45 ${path}`
+    serial.writeLine(str)
+  }*/
+
+  /*//% blockId=newland_inference block="KNN inference"
+  //% group="Classifier" weight=89
+  //% advanced=true
+  export function newland_inference() {
+    let str = `K46`
+    serial.writeLine(`K46`)
+    // asyncWrite(str, 46)
+  }*/
+
+  /*//% blockId=newland_on_inference block="on Inference"
+  //% group="Classifier" weight=88 draggableParameters=reporter blockGap=40
+  //% advanced=true
+  export function newland_on_inference(handler: (index: number) => void) {
+    kmodelEvt = handler
+  }*/
+
 }
 
 
